@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+
+/* Optional: Section container limit */
+.container {
+  max-width: 1280px;
+}
+
+* {
+  cursor: none !important;
+}
