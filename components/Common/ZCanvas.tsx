@@ -91,6 +91,7 @@ const ZCanvas = ({ onStageChange }: ZCanvasProps) => {
     }
 
     function resize() {
+      if (!canvas || !ctx) return
       W = canvas.offsetWidth
       H = canvas.offsetHeight
       canvas.width  = W * devicePixelRatio
@@ -102,6 +103,7 @@ const ZCanvas = ({ onStageChange }: ZCanvasProps) => {
     resize()
 
     function draw() {
+      if (!ctx || !canvas) return
       frame++
       ctx.clearRect(0, 0, W, H)
 
