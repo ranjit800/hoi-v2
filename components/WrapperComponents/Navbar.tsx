@@ -38,7 +38,7 @@ const Navbar = () => {
             : "bg-transparent py-6"
         }`}
       >
-        <div className="container mx-auto px-6 flex items-center justify-between">
+        <div className="container mx-auto  flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="relative z-1002">
             <Image
