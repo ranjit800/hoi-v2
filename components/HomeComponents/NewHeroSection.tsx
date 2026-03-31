@@ -5,7 +5,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import ZCanvas from "@/components/Common/ZCanvas";
 import IdeadIcon from "@/public/IdeaIcon.png";
-import Antigravity from "@/components/Common/Antigravity";
 
 const STAGE_LABELS = ["Strategy", "Systems", "Branding", "Team", "Revenue"];
 
@@ -35,17 +34,6 @@ const itemVariants = {
 
 const NewHeroSection = () => {
   const [activeStage, setActiveStage] = useState(0);
-  const [particleSize, setParticleSize] = useState(1.5);
-
-  React.useEffect(() => {
-    const handleResize = () => {
-      setParticleSize(window.innerWidth < 768 ? 0.5 : 1.5);
-    };
-    
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   return (
     <section className="relative w-full min-h-screen bg-[#100702] text-white overflow-hidden border-t border-white/10">
@@ -54,32 +42,11 @@ const NewHeroSection = () => {
           DESKTOP           (≥ lg)  →  3-column flex row
       ────────────────────────────────────────────────────────────────────── */}
 
-      {/* Background Antigravity Animation */}
-      <div className="absolute inset-0 w-full h-full z-0 opacity-80 pointer-events-none lg:pointer-events-auto">
-        <Antigravity
-          count={300}
-          magnetRadius={6}
-          ringRadius={7}
-          waveSpeed={0.4}
-          waveAmplitude={1}
-          particleSize={particleSize}
-          lerpSpeed={0.05}
-          color="#FD5A07"
-          autoAnimate
-          particleVariance={1}
-          rotationSpeed={0}
-          depthFactor={1}
-          pulseSpeed={3}
-          particleShape="capsule"
-          fieldStrength={10}
-        />
-      </div>
-
       <motion.div
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="container mx-auto px-6 lg:px-0 h-full w-full flex flex-col lg:flex-row min-h-screen pt-10 relative z-10 lg:pointer-events-none"
+        className="container mx-auto px-6 lg:px-0 h-full w-full flex flex-col lg:flex-row min-h-screen pt-10 relative z-10"
       >
         {/* ══ LEFT — Text Content ══ */}
         <div
@@ -89,7 +56,6 @@ const NewHeroSection = () => {
             flex flex-col justify-center gap-3
             pt-12 lg:py-5
             px-0
-            lg:pointer-events-auto
           "
         >
           {/* Eyebrow */}
@@ -156,7 +122,7 @@ const NewHeroSection = () => {
         </div>
 
         {/* ══ MIDDLE — Stage labels (desktop only) ══ */}
-        <motion.div id="middlediv" variants={itemVariants} className="  hidden lg:flex w-[15%] flex-col items-end justify-center lg:pointer-events-auto">
+        <motion.div id="middlediv" variants={itemVariants} className="  hidden lg:flex w-[15%] flex-col items-end justify-center ">
           <div className="flex flex-col items-center">
             {STAGE_LABELS.map((label, i) => (
               <div key={label} className="flex flex-col items-center">
@@ -182,7 +148,6 @@ const NewHeroSection = () => {
             w-full lg:w-[45%]
             h-[350px] sm:h-[400px] md:h-[460px] lg:h-auto
             lg:min-h-[750px] lg:max-h-[900px] xl:max-h-[1000px]
-            lg:pointer-events-auto
             my-auto
           "
         >
