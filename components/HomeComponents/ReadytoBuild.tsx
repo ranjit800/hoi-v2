@@ -23,7 +23,7 @@ const ReadytoBuild = () => {
                         STOP GUESSING. <br className="hidden md:block" /> START BUILDING <span className="text-[#FD5A07]">REVENUE.</span>
                     </h2>
 
-                    <p className="text-[14px] md:text-base text-white font-medium  max-w-2xl">
+                    <p className="text-[16px] md:text-base text-white font-medium  max-w-2xl">
                         Book a free 30-minute call. We'll map exactly which Z System stages apply to your business.
                     </p>
 

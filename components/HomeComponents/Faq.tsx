@@ -71,7 +71,7 @@ const Faq = () => {
             <div className="container mx-auto px-6 lg:px-0">
                 {/* Section Header */}
                 <div className="mb-12">
-                    <span className="text-[10px] md:text-[17px] font-['Barlow'] uppercase text-[#FD5A07] block mb-4">
+                    <span className="text-[16px] md:text-[17px] font-['Barlow'] uppercase text-[#FD5A07] block mb-4">
                         FAQ
                     </span>
                     <h2 className="text-[clamp(2rem,5vw,4rem)] font-normal text-white mb-6  leading-[0.95] font-['Bebas_Neue'] uppercase">

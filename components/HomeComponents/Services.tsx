@@ -70,16 +70,16 @@ const ServiceCard = ({ title, subtitle, description }: { title: string; subtitle
         <h3 className="text-xl md:text-2xl font-normal uppercase font-['Bebas_Neue'] text-[#100702]">
             {title}
         </h3>
-        <p className="text-[10px] md:text-xs font-['Barlow'] font-bold tracking-wider mt-1 text-gray-400 group-hover:text-[#100702]/60 transition-colors duration-300">
+        <p className="text-[14px] md:text-xs font-['Barlow'] font-bold tracking-wider mt-1 text-gray-400 group-hover:text-[#100702]/60 transition-colors duration-300">
             {subtitle}
         </p>
       </div>
       
-      <p className="text-[13px] md:text-sm font-['Barlow'] leading-relaxed mb-8 grow text-[#100702] group-hover:text-[#100702]/90 transition-colors duration-300 z-10">
+      <p className="text-[14px] md:text-sm font-['Barlow'] leading-relaxed mb-8 grow text-[#100702] group-hover:text-[#100702]/90 transition-colors duration-300 z-10">
           {description}
       </p>
       
-      <button className="text-[12px] md:text-lg font-['Bebas_Neue'] font-normal uppercase w-fit pb-1 transition-all cursor-pointer text-[#FD5A07] group-hover:text-black group-hover:border-[#100702] hover:border-b-2 z-10">
+      <button className="text-[16px] md:text-lg font-['Bebas_Neue'] font-normal uppercase w-fit pb-1 transition-all cursor-pointer text-[#FD5A07] group-hover:text-black group-hover:border-[#100702] hover:border-b-2 z-10">
           LEARN MORE
       </button>
     </motion.div>
@@ -145,13 +145,13 @@ const Services = () => {
                     className="flex flex-col md:flex-row md:items-end justify-between gap-10 mb-10 items-start"
                 >
                     <div className="max-w-3xl">
-                        <motion.span variants={itemFadeUp} className="text-[10px] md:text-[17px] font-['Barlow'] uppercase text-[#FD5A07] block mb-4">
+                        <motion.span variants={itemFadeUp} className="text-[16px] md:text-[17px] font-['Barlow'] uppercase text-[#FD5A07] block mb-4">
                             SERVICES
                         </motion.span>
                         <motion.h2 variants={itemFadeUp} className="text-[clamp(2.5rem,5vw,4.2rem)] text-[#151515] my-5 tracking-tight leading-[0.99] font-['Bebas_Neue'] uppercase">
                             EIGHT CAPABILITIES. <br className="hidden md:block" /> ONE CONNECTED SYSTEM.
                         </motion.h2>
-                        <motion.p variants={itemFadeUp} className="text-sm md:text-base text-[#100702] font-['Barlow'] leading-relaxed max-w-2xl font-medium">
+                        <motion.p variants={itemFadeUp} className="text-[16px] md:text-base text-[#100702] font-['Barlow'] leading-relaxed max-w-2xl font-medium">
                             We don't just add AI; we re-engineer your core operations. From strategy to deployment, we build the systems that give your business a permanent unfair advantage.
                         </motion.p>
                     </div>

@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 import { createPortal } from "react-dom";
 
@@ -18,15 +18,25 @@ const navLinks = [
 const MobileNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious() ?? 0;
+    
+    // Don't hide if menu is open
+    if (latest > previous && latest > 150 && !isOpen) {
+      setIsHidden(true);
+    } else {
+      setIsHidden(false);
+    }
+    
+    setIsScrolled(latest > 20);
+  });
 
   useEffect(() => {
     setMounted(true);
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   // Lock scroll when menu is open
@@ -46,8 +56,14 @@ const MobileNavbar = () => {
   return (
     <div className="lg:hidden">
       {/* Mobile Header Bar */}
-      <nav
-        className={`fixed top-0 left-0 w-full z-1002 transition-all duration-300 ${
+      <motion.nav
+        variants={{
+          visible: { y: 0 },
+          hidden: { y: "-100%" },
+        }}
+        animate={isHidden ? "hidden" : "visible"}
+        transition={{ duration: 0.35, ease: "easeInOut" }}
+        className={`fixed top-0 left-0 w-full z-1002 transition-colors duration-300 ${
           isOpen
             ? "bg-transparent"
             : isScrolled
@@ -79,7 +95,7 @@ const MobileNavbar = () => {
             )}
           </button>
         </div>
-      </nav>
+      </motion.nav>
 
       {/* Mobile Menu Overlay - Rendered via Portal */}
       {createPortal(

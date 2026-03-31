@@ -19,7 +19,7 @@ const ComparisonRow = ({ text, subtext, iconType, index }: any) => {
                 {isOld ? <HiXMark className="w-5 h-5 opacity-70" /> : <HiCheck className="w-5 h-5" />}
             </div>
             <div>
-                <p className={`text-[13px] md:text-[15px] leading-tight font-medium font-['barlow'] ${isOld ? "text-[#87766F] line-through decoration-gray-500/50" : "text-white"}`}>
+                <p className={`text-[16px] md:text-[15px] leading-tight font-medium font-['barlow'] ${isOld ? "text-[#87766F] line-through decoration-gray-500/50" : "text-white"}`}>
                     {text}
                 </p>
                 {subtext && (
@@ -59,13 +59,13 @@ const TheProblem = () => {
                 {/* Header Section */}
                 <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-8 mb-16 px-4 md:px-0">
                     <div className="max-w-4xl">
-                        <span className="text-[10px] md:text-[17px] font-['barlow'] uppercase text-[#FD5A07] block mb-3">
+                        <span className="text-[16px] md:text-[17px] font-['barlow'] uppercase text-[#FD5A07] block mb-3">
                             THE PROBLEM
                         </span>
                         <h2 className="text-[clamp(2.5rem,5vw,4.2rem)] text-white my-4  leading-[0.95] font-['Bebas_Neue'] uppercase">
                             THE PROBLEM WITH HOW <br className="hidden md:block" /> BUSINESSES BUY HELP TODAY.
                         </h2>
-                        <p className="text-[14px] md:text-[16px] text-white/90 leading-relaxed max-w-3xl font-['barlow']">
+                        <p className="text-[16px] md:text-[16px] text-white/90 leading-relaxed max-w-3xl font-['barlow']">
                             Most businesses we speak with have tried an agency, a consultant, or a freelancer before — and ended up more frustrated than when they started. Here's why the old model is broken, and what HOI does differently.
                         </p>
                     </div>
@@ -94,7 +94,7 @@ const TheProblem = () => {
                         
                         {/* Quote Box Area */}
                         <div className="mt-10 p-6 md:p-8 bg-[#40200D] border border-white/5 rounded-sm">
-                            <p className="text-[13px] md:text-[15px] leading-relaxed text-[#87766F] font-medium italic font-['barlow']">
+                            <p className="text-[16px] md:text-[15px] leading-relaxed text-[#87766F] font-medium italic font-['barlow']">
                                 "Most businesses we talk to have been burned at least once before. That's actually why they come to us." <span className="text-[#87766F] font-semibold not-italic ml-2 block lg:inline mt-2 lg:mt-0 font-['barlow']">— HOI Founder</span>
                             </p>
                         </div>

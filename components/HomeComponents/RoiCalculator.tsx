@@ -8,13 +8,13 @@ import Button from "@/components/Common/Button";
 
 const ResultColumn = ({ label, value, sublabel }: { label: string; value: string; sublabel: string }) => (
     <div className="flex flex-col gap-6 p-8 md:p-6 border-b md:border-b-0 md:border-r last:border-none border-white flex-1 min-w-0">
-        <p className="text-[12px] md:text-[13px] text-white font-['Barlow'] font-medium leading-snug max-w-[180px]">
+        <p className="text-[16px] md:text-[13px] text-white font-['Barlow'] font-medium leading-snug max-w-[180px]">
             {label}
         </p>
-        <span className="text-[#FD5A07] text-5xl md:text-6xl lg:text-7xl font-normal font-['Bebas_Neue'] leading-none truncate">
+        <span className="text-[#FD5A07] text-[30px] md:text-6xl lg:text-7xl font-normal font-['Bebas_Neue'] leading-none truncate">
             {value}
         </span>
-        <p className="text-[12px] md:text-[13px] text-white font-['Barlow'] font-medium leading-snug max-w-[180px]">
+        <p className="text-[16px] md:text-[13px] text-white font-['Barlow'] font-medium leading-snug max-w-[180px]">
             {sublabel}
         </p>
     </div>
@@ -147,7 +147,7 @@ const RoiCalculator = () => {
                 >
                     <motion.span
                         variants={fadeUp}
-                        className="text-[10px] md:text-[17px] font-['Barlow'] uppercase text-[#FD5A07] block mb-4"
+                        className="text-[16px] md:text-[17px] font-['Barlow'] uppercase text-[#FD5A07] block mb-4"
                     >
                         ROI CALCULATOR
                     </motion.span>
@@ -159,7 +159,7 @@ const RoiCalculator = () => {
                     </motion.h2>
                     <motion.p
                         variants={fadeUp}
-                        className="text-[10px] md:text-[17px] font-['Barlow'] text-white leading-relaxed max-w-2xl font-medium"
+                        className="text-[16px] md:text-[17px] font-['Barlow'] text-white leading-relaxed max-w-2xl font-medium"
                     >
                         Based on HOI client averages across 90+ Australian businesses
                     </motion.p>

@@ -17,7 +17,7 @@ const CaseStudyRow = ({ client, subtitle, challenge, solution, stat, statSub, in
             <h4 className="text-xl md:text-2xl font-normal text-white uppercase font-['Bebas_Neue']  mb-1">
                 {client}
             </h4>
-            <p className="text-[11px] md:text-[13px] text-gray-400 font-medium font-['Barlow']">
+            <p className="text-[14px] md:text-[13px] text-gray-400 font-medium font-['Barlow']">
                 {subtitle}
             </p>
         </div>
@@ -25,7 +25,7 @@ const CaseStudyRow = ({ client, subtitle, challenge, solution, stat, statSub, in
         {/* Challenge Area */}
         <div className="p-6 md:p-4 md:border-r border-white/10 flex flex-col justify-center">
             <span className="text-white text-[17px] font-semibold font-['Bebas_Neue'] uppercase tracking-[1px] block mb-1">CHALLENGE</span>
-            <p className="text-[13px] md:text-[14px]  text-white font-medium font-['Barlow']">
+            <p className="text-[14px] md:text-[14px]  text-white font-medium font-['Barlow']">
                 {challenge}
             </p>
         </div>
@@ -33,7 +33,7 @@ const CaseStudyRow = ({ client, subtitle, challenge, solution, stat, statSub, in
         {/* Solution Area */}
         <div className="p-6 md:p-4 md:border-r border-white/10 flex flex-col justify-center">
             <span className="text-white text-[17px] font-semibold font-['Bebas_Neue'] uppercase tracking-[1px] block mb-1">SOLUTION</span>
-            <p className="text-[13px] md:text-[14px] leading-snug text-white font-medium font-['Barlow']">
+            <p className="text-[14px] md:text-[14px] leading-snug text-white font-medium font-['Barlow']">
                 {solution}
             </p>
         </div>
@@ -43,7 +43,7 @@ const CaseStudyRow = ({ client, subtitle, challenge, solution, stat, statSub, in
             <span className="text-[#FD5A07] text-3xl md:text-4xl font-normal font-['Bebas_Neue'] leading-none">
                 {stat}
             </span>
-            <div className="text-gray-400 text-[11px] md:text-[12px] font-medium font-['Barlow'] mt-1 leading-tight whitespace-pre-line">
+            <div className="text-gray-400 text-[14px] md:text-[12px] font-medium font-['Barlow'] mt-1 leading-tight whitespace-pre-line">
                 {statSub}
             </div>
         </div>
@@ -99,13 +99,13 @@ const WhatHoiDoes = () => {
                 {/* Header Section */}
                 <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-10 mb-16">
                     <div className="max-w-3xl">
-                        <span className="text-[10px] md:text-[17px] font-['Barlow'] uppercase text-[#FD5A07] block mb-4">
+                        <span className="text-[16px] md:text-[17px] font-['Barlow'] uppercase text-[#FD5A07] block mb-4">
                             WHAT HOI DOES?
                         </span>
                         <h2 className="text-[clamp(2.5rem,5vw,4.2rem)] text-white my-5 leading-[0.99] font-['Bebas_Neue'] uppercase">
                             REAL BUSINESSES. <br className="hidden md:block" /> REAL NUMBERS.
                         </h2>
-                        <p className="text-[13px] md:text-base text-white leading-relaxed max-w-2xl font-['Barlow'] font-medium">
+                        <p className="text-[16px] md:text-base text-white leading-relaxed max-w-2xl font-['Barlow'] font-medium">
                             Not "improved performance." Actual revenue figures, actual timelines, actual clients you can verify on LinkedIn.
                         </p>
                     </div>

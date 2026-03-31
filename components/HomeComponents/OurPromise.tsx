@@ -39,7 +39,7 @@ const PromiseCard = ({ title, description, index }: any) => (
         <h3 className="text-lg md:text-xl font-normal text-[#100702] mb-4 uppercase  leading-tight font-['Bebas_Neue']">
             {title}
         </h3>
-        <p className="text-[13px] md:text-sm text-[#100702] font-['Barlow']  leading-relaxed font-medium">
+        <p className="text-[15px] md:text-[16px] text-[#100702] font-['Barlow']  leading-relaxed font-medium">
             {description}
         </p>
     </motion.div>
@@ -51,13 +51,13 @@ const OurPromise = () => {
             <div className="container mx-auto px-6 lg:px-0">
                 {/* Section Header */}
                 <div className="mb-12">
-                    <span className="text-[10px] md:text-[17px] font-['Barlow'] uppercase text-[#FD5A07] block mb-4">
+                    <span className="text-[16px] md:text-[17px] font-['Barlow'] uppercase text-[#FD5A07] block mb-4">
                         OUR PROMISE
                     </span>
                     <h2 className="text-[clamp(2rem,5vw,4rem)] font-normal text-[#100702] mb-6  leading-[0.95] font-['Bebas_Neue'] uppercase">
                         WE STAND BEHIND <br className="hidden md:block" /> EVERYTHING WE BUILD.
                     </h2>
-                    <p className="text-[13px] md:text-sm text-[#100702] leading-relaxed font-medium max-w-sm font-['Barlow']">
+                    <p className="text-[16px] md:text-[16px] text-[#100702] leading-relaxed font-medium max-w-sm font-['Barlow']">
                         We've been on the receiving end of bad vendor experiences too. So we built the guarantees we wished we'd had.
                     </p>
                 </div>

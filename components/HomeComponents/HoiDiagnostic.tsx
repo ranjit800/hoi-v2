@@ -199,13 +199,13 @@ const HoiDiagnostic = () => {
                     {/* Left Column */}
                     <div className="w-full lg:w-[45%] flex flex-col justify-between h-full min-h-[300px]">
                         <div>
-                            <span className="text-[12px] font-bold tracking-[0.2em] font-['Barlow'] uppercase text-[#FD5A07] block mb-4">
+                            <span className="text-[16px] font-bold tracking-[0.2em] font-['Barlow'] uppercase text-[#FD5A07] block mb-4">
                                 60 Seconds
                             </span>
                             <h2 className="text-[clamp(2.5rem,6vw,5rem)] font-black text-[#ffffff] mb-6 leading-[0.9] font-['Bebas_Neue'] uppercase">
                                 60 SECONDS. <br /> YOUR <span className="text-[#FD5A07]">GROWTH</span> PATH.
                             </h2>
-                            <p className="text-sm md:text-base text-gray-400 leading-relaxed font-medium max-w-md font-['Barlow']">
+                            <p className="text-[16px] md:text-[16px] text-gray-400 leading-relaxed font-medium max-w-md font-['Barlow']">
                                 3 quick questions. We'll show you exactly where your biggest opportunity is — and what to do about it this week. No email required to see your result.
                             </p>
                         </div>

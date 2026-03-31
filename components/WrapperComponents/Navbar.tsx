@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import Button from "@/components/Common/Button";
 import MobileNavbar from "./MobileNavbar";
 
@@ -16,14 +17,20 @@ const navLinks = [
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
+  const { scrollY } = useScroll();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious() ?? 0;
+    
+    if (latest > previous && latest > 150) {
+      setIsHidden(true);
+    } else {
+      setIsHidden(false);
+    }
+    
+    setIsScrolled(latest > 20);
+  });
 
   return (
     <>
@@ -31,8 +38,14 @@ const Navbar = () => {
       <MobileNavbar />
 
       {/* Desktop Navigation (Hidden on smaller screens) */}
-      <nav
-        className={`fixed top-0 left-0 w-full z-1000 hidden lg:block transition-all duration-300 ${
+      <motion.nav
+        variants={{
+          visible: { y: 0 },
+          hidden: { y: "-100%" },
+        }}
+        animate={isHidden ? "hidden" : "visible"}
+        transition={{ duration: 0.35, ease: "easeInOut" }}
+        className={`fixed top-0 left-0 w-full z-1000 hidden lg:block transition-colors duration-300 ${
           isScrolled
             ? "bg-black/80 backdrop-blur-md border-b border-white/5 py-3"
             : "bg-transparent py-6"
@@ -58,9 +71,14 @@ const Navbar = () => {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="text-white hover:text-[#FD5A07] text-[22px] font-['Bebas_Neue'] tracking-wider transition-all duration-300"
+                  className="group relative overflow-hidden flex text-[22px] font-['Bebas_Neue'] tracking-wider leading-tight"
                 >
-                  {link.name}
+                  <span className="text-white transition-transform duration-300 ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:-translate-y-[110%]">
+                    {link.name}
+                  </span>
+                  <span className="text-[#FD5A07] absolute inset-0 translate-y-[110%] transition-transform duration-300 ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:translate-y-0">
+                    {link.name}
+                  </span>
                 </Link>
               ))}
             </div>
@@ -70,7 +88,7 @@ const Navbar = () => {
             </Button>
           </div>
         </div>
-      </nav>
+      </motion.nav>
     </>
   );
 };

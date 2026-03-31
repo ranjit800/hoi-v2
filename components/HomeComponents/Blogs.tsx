@@ -85,7 +85,7 @@ const BlogCard = ({ date, title, excerpt, image }: { date: string; title: string
             <h3 className="text-xl md:text-2xl font-normal text-[#100702] uppercase font-['Bebas_Neue'] line-clamp-2">
                 {title}
             </h3>
-            <p className="text-[13px] text-[#747474] font-['Barlow'] leading-relaxed font-medium line-clamp-3">
+            <p className="text-[16px] text-[#747474] font-['Barlow'] leading-relaxed font-medium line-clamp-3">
                 {excerpt}
             </p>
             <div className="flex items-center gap-2 mt-2">
@@ -122,13 +122,13 @@ const Blogs = () => {
                     className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16"
                 >
                     <div className="max-w-2xl">
-                        <motion.span variants={fadeUp} className="text-[10px] md:text-[17px] font-['Barlow'] uppercase text-[#FD5A07] block mb-4">
+                        <motion.span variants={fadeUp} className="text-[16px] md:text-[17px] font-['Barlow'] uppercase text-[#FD5A07] block mb-4">
                             REAL TRANSFORMATION STORIES
                         </motion.span>
                         <motion.h2 variants={fadeUp} className="text-[clamp(2rem,5vw,4rem)] font-normal text-[#100702] mb-6 leading-[0.95] font-['Bebas_Neue'] uppercase">
                             OUR RECENT BLOGS.
                         </motion.h2>
-                        <motion.p variants={fadeUp} className="text-[13px] md:text-[17px] text-[#100702] font-['Barlow'] leading-relaxed font-medium max-w-sm">
+                        <motion.p variants={fadeUp} className="text-[16px] md:text-[17px] text-[#100702] font-['Barlow'] leading-relaxed font-medium max-w-sm">
                             Practical insights for Australian business owners who want to digitise, automate, and grow — no fluff, no jargon.
                         </motion.p>
                     </div>

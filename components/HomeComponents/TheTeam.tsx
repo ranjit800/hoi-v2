@@ -75,13 +75,13 @@ const TheTeam = () => {
             <div className="container mx-auto px-6 lg:px-0">
                 {/* Section Header */}
                 <div className="mb-12">
-                    <span className="text-[10px] md:text-[17px] font-['Barlow'] uppercase text-[#FD5A07] block mb-4">
+                    <span className="text-[16px] md:text-[17px] font-['Barlow'] uppercase text-[#FD5A07] block mb-4">
                         THE TEAM
                     </span>
                     <h2 className="text-[clamp(2rem,5vw,4rem)] font-normal text-white mb-6  leading-[0.95] font-['Bebas_Neue'] uppercase">
                         THE PEOPLE WHO ACTUALLY <br className="hidden md:block" /> DO THE WORK.
                     </h2>
-                    <p className="text-[13px] md:text-[17px] text-white leading-relaxed font-medium max-w-[500px]">
+                    <p className="text-[16px] md:text-[17px] text-white leading-relaxed font-medium max-w-[500px]">
                         No account managers passing messages. The team you meet in week one is the team that builds your project and picks up your calls.
                     </p>
                 </div>

@@ -77,7 +77,7 @@ const FeatureCard = ({ title, description }: any) => (
         <h3 className="text-lg md:text-xl font-normal mb-2 uppercase  font-['Bebas_Neue']">
             {title}
         </h3>
-        <p className="text-[11px] md:text-[13px] leading-relaxed font-['barlow'] font-medium text-[#100702] group-hover:text-[#100702]/80 transition-colors duration-300">
+        <p className="text-[16px] md:text-[13px] leading-relaxed font-['barlow'] font-medium text-[#100702] group-hover:text-[#100702]/80 transition-colors duration-300">
             {description}
         </p>
     </div>
@@ -124,7 +124,7 @@ const WhatWeDo = () => {
                     >
                         <motion.span 
                             variants={fadeInUp}
-                            className="text-[10px] md:text-[17px] font-['Barlow'] uppercase text-[#FD5A07] block mb-2"
+                            className="text-[16px] md:text-[17px] font-['Barlow'] uppercase text-[#FD5A07] block mb-2"
                         >
                             WHAT WE DO
                         </motion.span>
@@ -135,10 +135,10 @@ const WhatWeDo = () => {
                             Not an agency. Not a consultant. <br className="hidden md:block" /> A business builder.
                         </motion.h2>
                         <motion.div variants={staggerContainer} className="space-y-4 max-w-lg">
-                            <motion.p variants={fadeInUp} className="text-[13px] md:text-[14px] lg:text-[15px] text-[#151515] leading-relaxed font-medium">
+                            <motion.p variants={fadeInUp} className="text-[16px] md:text-[14px] lg:text-[15px] text-[#151515] leading-relaxed font-medium">
                                 Most businesses that come to us have been burned before — by agencies that deliver a piece and disappear, or consultants who report but never execute.
                             </motion.p>
-                            <motion.p variants={fadeInUp} className="text-[13px] md:text-[14px] lg:text-[15px] text-[#151515] leading-relaxed font-medium">
+                            <motion.p variants={fadeInUp} className="text-[16px] md:text-[14px] lg:text-[15px] text-[#151515] leading-relaxed font-medium">
                                 HOI is built differently. We combine strategy, technology, and marketing execution under one accountable team. We own your outcomes.
                             </motion.p>
                         </motion.div>
@@ -151,7 +151,7 @@ const WhatWeDo = () => {
                     >
                         <motion.span 
                             variants={fadeInUp}
-                            className="text-[10px] md:text-[17px] font-['Barlow'] uppercase text-[#FD5A07] mb-4 lg:mb-7 block"
+                            className="text-[16px] md:text-[17px] font-['Barlow'] uppercase text-[#FD5A07] mb-4 lg:mb-7 block"
                         >
                             BY THE NUMBERS
                         </motion.span>

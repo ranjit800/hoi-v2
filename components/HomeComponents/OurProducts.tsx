@@ -101,7 +101,7 @@ const ProductCard = ({ title, description }: { title: string; description: strin
     <h3 className="text-xl font-normal text-[#100702] uppercase font-['Bebas_Neue']">
       {title}
     </h3>
-    <p className="text-[13px] text-[#100702] font-medium font-['Barlow']">
+    <p className="text-[16px] md:text-[14px] text-[#100702] font-medium font-['Barlow']">
       {description}
     </p>
 
@@ -154,7 +154,7 @@ const OurProducts = () => {
             {/* Tagline */}
             <motion.span
               variants={fadeUp}
-              className="text-[10px] md:text-[17px] font-['Barlow'] uppercase text-[#FD5A07] block mb-4"
+              className="text-[16px] md:text-[17px] font-['Barlow'] uppercase text-[#FD5A07] block mb-4"
             >
               OUR PRODUCT
             </motion.span>
@@ -170,7 +170,7 @@ const OurProducts = () => {
             {/* Body copy */}
             <motion.p
               variants={fadeUp}
-              className="text-[13px] md:text-sm text-black leading-relaxed font-medium max-w-sm"
+              className="text-[16px] md:text-sm text-black leading-relaxed font-medium max-w-sm"
             >
               From pre-revenue startups to $20M+ businesses — if you want to build
               something serious across Australia, we're built for you.

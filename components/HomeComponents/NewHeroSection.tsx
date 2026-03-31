@@ -61,7 +61,7 @@ const NewHeroSection = () => {
           {/* Eyebrow */}
           <motion.div variants={itemVariants} className="flex items-center gap-3">
             <span className="w-8 h-[2px] bg-[#FD5A07] shrink-0" />
-            <span className="text-[10px] md:text-[12px] font-['Barlow'] uppercase text-[#FD5A07]">Not an agency. Not a consultant.</span>
+            <span className="text-[16px] md:text-[12px] font-['Barlow'] uppercase text-[#FD5A07]">Not an agency. Not a consultant.</span>
           </motion.div>
 
           {/* Headline */}
@@ -75,7 +75,7 @@ const NewHeroSection = () => {
           </motion.h1>
 
           {/* Description */}
-          <motion.p variants={itemVariants} className="font-['Barlow'] text-[clamp(13px,1.1vw,16px)] leading-relaxed text-white max-w-[540px]">
+          <motion.p variants={itemVariants} className="font-['Barlow'] text-[16px] md:text-[clamp(13px,1.1vw,16px)] leading-relaxed text-white max-w-[540px]">
             From AI automation and business digitisation to startup builds and digital marketing — HOI gives ambitious Australian businesses the complete system to dominate their
             market. Strategy, technology, and execution under one accountable team.
           </motion.p>
@@ -85,14 +85,17 @@ const NewHeroSection = () => {
             <div className="flex items-start gap-4 bg-white/[0.035] border border-white/[0.07] rounded px-4 py-3.5 font-['Barlow']">
               <span className="text-[clamp(26px,2.5vw,36px)] font-semibold text-[#FD5A07] leading-none whitespace-nowrap font-['Bebas_Neue']">3.2×</span>
               <div className="flex flex-col gap-1 pt-0.5">
-                <span className="text-[13px] font-semibold text-white">Average client revenue growth at 12 months</span>
-                <span className="text-[11px] text-white/40">Across 90+ Australian businesses — verified client data 2022–2025</span>
+                <span className="text-[16px] md:text-[13px] font-semibold text-white">Average client revenue growth at 12 months</span>
+                <span className="text-[14px] md:text-[11px] text-white/40">Across 90+ Australian businesses — verified client data 2022–2025</span>
               </div>
             </div>
 
             <div className="flex items-center gap-3 bg-white/[0.035] border border-white/[0.07] rounded px-4 py-3.5 text-[13px] text-white/70 font-['Barlow']">
               <Image src={IdeadIcon} alt="Idea Icon" width={20} height={20} className="shrink-0" />
+             <span className="text-[16px] md:text-[13px] font-semibold text-white">
+              
               Projects typically start from $2000. Written scope delivered before you commit to anything — always.
+               </span>
             </div>
           </motion.div>
 
@@ -148,7 +151,7 @@ const NewHeroSection = () => {
             w-full lg:w-[45%]
             h-[350px] sm:h-[400px] md:h-[460px] lg:h-auto
             lg:min-h-[750px] lg:max-h-[900px] xl:max-h-[1000px]
-            my-auto
+            my-auto  -ml-4 md:ml-0 lg:ml-0
           "
         >
           <ZCanvas onStageChange={setActiveStage} />

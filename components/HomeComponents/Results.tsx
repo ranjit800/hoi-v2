@@ -194,7 +194,7 @@ const Results = () => {
                     }}
                     className="mb-12"
                 >
-                    <motion.span variants={fadeUp} className="text-[10px] md:text-[17px] font-['Barlow'] uppercase text-[#FD5A07] block mb-4">
+                    <motion.span variants={fadeUp} className="text-[16px] md:text-[17px] font-['Barlow'] uppercase text-[#FD5A07] block mb-4">
                         RESULTS
                     </motion.span>
                     <motion.h2 variants={fadeUp} className="text-[clamp(2rem,5vw,4rem)] font-normal text-[#100702] mb-6 leading-[0.95] font-['Bebas_Neue'] uppercase">
