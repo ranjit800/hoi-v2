@@ -132,7 +132,7 @@ const NewHeroSection = () => {
 
           {/* CTA Buttons */}
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row justify-between">
-            <button className="font-['Bebas_Neue'] text-[16px] md:text-[18px] rounded font-normal tracking-[0.05em] uppercase bg-[#FD5A07] text-white py-3 px-10 cursor-pointer hover:bg-[#d44d00] transition-colors duration-200">
+            <button className="font-['Bebas_Neue'] text-[16px] md:text-[18px] rounded font-normal tracking-[0.05em] uppercase bg-[#FD5A07] text-white py-3 px-10 cursor-pointer hover:bg-[#d44d00] transition-colors duration-200 mb-5 lg:mb-0">
               Book a Free Strategy Call
             </button>
             <button className="font-['Bebas_Neue'] text-[16px] md:text-[18px] rounded font-normal tracking-[0.05em] uppercase bg-transparent text-white border border-white/30 py-3 px-10 cursor-pointer hover:border-white transition-colors duration-200">
@@ -181,8 +181,9 @@ const NewHeroSection = () => {
             relative
             w-full lg:w-[45%]
             h-[350px] sm:h-[400px] md:h-[460px] lg:h-auto
-            lg:min-h-screen
+            lg:min-h-[750px] lg:max-h-[900px] xl:max-h-[1000px]
             lg:pointer-events-auto
+            my-auto
           "
         >
           <ZCanvas onStageChange={setActiveStage} />
